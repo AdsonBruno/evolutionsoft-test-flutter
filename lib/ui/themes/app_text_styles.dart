@@ -30,4 +30,10 @@ class TextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.grey,
   );
+
+  static final textOfButton = GoogleFonts.nunitoSans(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    color: AppColors.white,
+  );
 }

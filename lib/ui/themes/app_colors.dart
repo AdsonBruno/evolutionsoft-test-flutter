@@ -10,4 +10,5 @@ class AppColors {
   static const description = Color(0xFFA1A5B7);
   static const red = Color(0XFFEB2E2E);
   static const grey = Color(0xFF8C8C8C);
+  static const overlayColorButton = Color.fromARGB(117, 207, 238, 241);
 }
