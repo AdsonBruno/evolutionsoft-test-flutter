@@ -2,5 +2,6 @@
 
 Este projeto foi proposto para o teste da vaga de flutter da empresa EvolutionSoft
 
-## Pacotes utilizados
+## Depêndencias utilizadas
  > google_fonts 3.0.1
+ > get: ^4.6.5
