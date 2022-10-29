@@ -1,5 +1,5 @@
-import 'package:evolutionsoft_test_flutter/ui/modules/login/login_page.dart';
-import 'package:evolutionsoft_test_flutter/ui/themes/app_colors.dart';
+import 'package:evolutionsoft_test_flutter/app/modules/login/login_page.dart';
+import 'package:evolutionsoft_test_flutter/app/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class AppWidget extends StatelessWidget {
