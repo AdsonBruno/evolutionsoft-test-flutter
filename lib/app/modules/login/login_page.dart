@@ -1,5 +1,5 @@
-import 'package:evolutionsoft_test_flutter/app/modules/widgets/generic_button.dart';
-import 'package:evolutionsoft_test_flutter/app/modules/widgets/text_field_widget.dart';
+import 'package:evolutionsoft_test_flutter/app/global/widgets/generic_button.dart';
+import 'package:evolutionsoft_test_flutter/app/global/widgets/text_field_widget.dart';
 // import 'package:evolutionsoft_test_flutter/ui/themes/app_colors.dart';
 import 'package:evolutionsoft_test_flutter/app/themes/app_images.dart';
 // import 'package:evolutionsoft_test_flutter/ui/themes/app_text_styles.dart';
