@@ -16,7 +16,7 @@ class GenericButtonWidget extends StatelessWidget {
 
   final String nameButton;
   // final Navigator? routeName;
-  final Function onPressed;
+  final void Function() onPressed;
   final Color? buttonColor;
   final double? buttonWidth;
   final double? buttonHeight;
@@ -24,25 +24,24 @@ class GenericButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 312,
-      height: 40,
-      decoration: BoxDecoration(
-        color: buttonColor ?? AppColors.primary,
-        borderRadius: radiusButton == null
-            ? BorderRadius.circular(8)
-            : BorderRadius.circular(radiusButton!),
-      ),
-      child: TextButton(
-        style: ButtonStyle(
-          overlayColor: MaterialStateProperty.all(AppColors.overlayColorButton),
-        ),
-        onPressed: () {},
-        child: Text(
-          // 'Login',
-          nameButton,
-          style: TextStyles.textOfButton,
-        ),
+    return ElevatedButton(
+      onPressed: onPressed,
+      style: ElevatedButton.styleFrom(
+          backgroundColor: buttonColor ?? AppColors.primary,
+          padding: const EdgeInsets.only(
+            left: 138,
+            right: 138,
+            top: 12,
+            bottom: 12,
+          ),
+          shape: RoundedRectangleBorder(
+            borderRadius: radiusButton == null
+                ? BorderRadius.circular(8)
+                : BorderRadius.circular(radiusButton!),
+          )),
+      child: Text(
+        nameButton,
+        style: TextStyles.textOfButton,
       ),
     );
   }
