@@ -7,11 +7,11 @@ class GenericButtonWidget extends StatelessWidget {
     super.key,
     required this.nameButton,
     required this.onPressed,
-    // this.routeName,
     this.buttonColor,
     this.buttonHeight,
     this.buttonWidth,
     this.radiusButton,
+    this.isLoading,
   });
 
   final String nameButton;
@@ -21,6 +21,7 @@ class GenericButtonWidget extends StatelessWidget {
   final double? buttonWidth;
   final double? buttonHeight;
   final double? radiusButton;
+  final bool? isLoading;
 
   @override
   Widget build(BuildContext context) {
@@ -39,10 +40,18 @@ class GenericButtonWidget extends StatelessWidget {
                 ? BorderRadius.circular(8)
                 : BorderRadius.circular(radiusButton!),
           )),
-      child: Text(
-        nameButton,
-        style: TextStyles.textOfButton,
-      ),
+      child: isLoading == true
+          ? const SizedBox(
+              height: 25,
+              width: 30,
+              child: CircularProgressIndicator(
+                color: AppColors.white,
+              ),
+            )
+          : Text(
+              nameButton,
+              style: TextStyles.textOfButton,
+            ),
     );
   }
 }
