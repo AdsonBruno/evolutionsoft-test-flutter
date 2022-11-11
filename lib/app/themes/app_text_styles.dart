@@ -36,4 +36,16 @@ class TextStyles {
     fontWeight: FontWeight.w400,
     color: AppColors.white,
   );
+
+  static final modalDescriptionText = GoogleFonts.openSans(
+    fontSize: 10,
+    fontWeight: FontWeight.w400,
+    color: AppColors.description,
+  );
+
+  static final blueModalText = GoogleFonts.openSans(
+    fontSize: 12,
+    fontWeight: FontWeight.w700,
+    color: AppColors.primary,
+  );
 }
