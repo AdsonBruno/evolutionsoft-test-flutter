@@ -48,4 +48,16 @@ class TextStyles {
     fontWeight: FontWeight.w700,
     color: AppColors.primary,
   );
+
+  static final textSize24White = GoogleFonts.openSans(
+    fontSize: 24,
+    fontWeight: FontWeight.w700,
+    color: AppColors.white,
+  );
+
+  static final textSize18White = GoogleFonts.openSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+    color: AppColors.white,
+  );
 }
