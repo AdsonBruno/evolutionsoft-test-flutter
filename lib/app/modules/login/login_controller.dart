@@ -25,8 +25,10 @@ class LoginController extends GetxController {
           .then((authModel) {
         loading.value = false;
         box.write('authModel', authModel);
+        print(repository);
         Get.offAllNamed(Routes.home);
       }).catchError((error) {
+        print(error);
         loading.value = false;
       });
     }

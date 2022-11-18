@@ -53,15 +53,13 @@ class HomePage extends GetView<HomeController> {
                 ),
               ),
             ),
-            const SizedBox(height: 10),
-            // GridView.count(crossAxisCount: 1, children: [
-            //   ProductCardWidget(
-            //     cardTitle: 'Alface',
-            //     cardDescription:
-            //         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
-            //     onTap: () {},
-            //   ),
-            // ]),
+            const SizedBox(height: 16),
+            ProductCardWidget(
+              cardTitle: 'Tomate',
+              cardDescription:
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...',
+              onTap: () {},
+            )
           ],
         ),
       ),
